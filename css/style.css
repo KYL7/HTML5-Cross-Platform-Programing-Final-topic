@@ -1,0 +1,171 @@
+ body {
+    background-image: url("../img/bg.jpg");
+    }
+
+/* Add a gray background color and some padding to the footer */
+  
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+
+  .carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    min-height: 200px;
+  }
+.carousel-control{
+      background-image:none !important;
+      filter:none !important;
+    }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  a{
+    color: #000000;
+  }
+
+  a.flash {
+    transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    text-decoration: none;
+  }
+
+  a.flash:hover {
+    -webkit-animation: zomg 0.5s infinite;
+    animation: zomg 0.5s infinite;
+  }
+
+  @-webkit-keyframes zomg {
+    0%, 100% { color: #7ccdea; }
+    16%      { color: #0074d9; }
+    32%      { color: #2ecc40; }
+    48%      { color: #ffdc00; }
+    64%      { color: #b10dc9; }
+    80%      { color: #ff4136; }
+  }
+  @keyframes zomg {
+    0%, 100% { color: #7ccdea; }
+    16%      { color: #0074d9; }
+    32%      { color: #2ecc40; }
+    48%      { color: #ffdc00; }
+    64%      { color: #b10dc9; }
+    80%      { color: #ff4136; }
+  }
+
+
+
+
+/* health */
+
+ul#tabs-nav {
+   margin: 0;
+   padding: 0;
+   position: relative;
+   text-align: center;
+}
+ul#tabs-nav li {
+   list-style: none;
+   display: inline-block;
+}
+a.tab-menu {
+   display: block;
+   background-color: #1b91ab;
+   font-size: 15px;
+   font-family: Arial,Helvetica,sans-serif;
+   color: #fff;
+   padding: 5px 10px;
+   text-shadow: 1px 1px 0px #1b91ab;
+   font-weight: bold;
+   text-decoration: none;
+   border: solid 1px #1b91ab;
+   border-bottom: 0;
+   border-radius: 3px 3px 0 0;
+}
+a.tab-menu.tabs-active {
+   background-color: #fff;
+   text-shadow: 1px 1px 0px #ffffff;
+   border: solid 1px #1b91ab;
+   color: #6b6b6b;
+   border-bottom: 0;
+}
+.tabs-container {
+   border: solid 1px #1b91ab;
+   padding: 10px;
+   margin-top: -1px;
+   background-color: #fff;
+}
+.tabs-panel {
+   display: none;
+   min-height: 150px;
+   overflow: auto;
+   max-height: 10000px;
+}
+
+/************CSS Animation***********/
+
+.animated { 
+   -webkit-animation-duration: 1s; 
+   animation-duration: 1s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+} 
+@-webkit-keyframes bounceIn { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: scale(.3); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        -webkit-transform: scale(1.05); 
+    } 
+
+    70% { 
+        -webkit-transform: scale(.9); 
+    } 
+
+    100% { 
+         -webkit-transform: scale(1); 
+    } 
+} 
+
+@keyframes bounceIn { 
+    0% { 
+        opacity: 0; 
+        transform: scale(.3); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        transform: scale(1.05); 
+    } 
+
+    70% { 
+        transform: scale(.9); 
+    } 
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 
+
+.bounceIn { 
+    -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn; 
+}
+
+ul#listnumber.listnum {
+   list-style-type: decimal;
+}
+/* health end*/
